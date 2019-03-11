@@ -39,13 +39,7 @@ RUN git clone https://github.com/ahay/src  /madagascar-src&& \
 RUN echo "\n" >> ~/.bashrc && \
 	echo "source /usr/local/share/madagascar/etc/env.sh" >> ~/.bashrc 
 
-####################################################################
-# AWS CLI Tools
-####################################################################
-RUN apt-get update && \
-    apt-get install python-dev python-pip -y && \
-    apt-get clean
-RUN pip install awscli
+
 
 
 #
